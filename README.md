@@ -1,5 +1,3 @@
-# MMSteam_Schema_Design
-
 # MongoDB Schema Guidelines — member & provider_details
 
 This document captures recommended improvements to your MongoDB schema for performance, correctness, and maintainability. It focuses only on MongoDB modeling (no external systems).
