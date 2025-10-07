@@ -65,7 +65,7 @@ Canonical provider_details
 
 ```json
 {
-  "_id": "p1",                       // consider provider_id or npi if unique
+  "_id": "p1",                 # consider provider_id or npi if unique
   "identifiers": { "npi": "1112223333", "taxId": "12-3456789" },
   "name": { "first": "Jane", "last": "Roe", "full": "Dr Jane Roe" },
   "type": "PCP",
@@ -94,7 +94,7 @@ Keep arrays bounded inside member (e.g., cache only the last 3 specialists if ne
 Examples
 
 ```json
-// member_programs
+# member_programs
 {
   "_id": "M123-HEDIS-2025",
   "member_id": "M123",
@@ -108,7 +108,7 @@ Examples
 ```
 
 ```json
-// member_program_deployments (events)
+# member_program_deployments (events)
 {
   "_id": { "$oid": "..." },
   "member_id": "M123",
@@ -120,7 +120,7 @@ Examples
 ```
 
 ```json
-// member_specialists (relationship)
+# member_specialists (relationship)
 {
   "_id": "M123-p9",
   "member_id": "M123",
@@ -146,27 +146,27 @@ Use consistent case: prefer snake_case (you are mostly there).
 members
 
 ```javascript
-// Unique where present
+# Unique where present
 db.members.createIndex(
   { "member_identifiers.mbrid": 1 },
   { unique: true, partialFilterExpression: { "member_identifiers.mbrid": { $exists: true } } }
 );
 
-// Name + DOB search (case-insensitive collation)
+# Name + DOB search (case-insensitive collation)
 db.members.createIndex(
   { "name.member_last_name": 1, "name.member_first_name": 1, "member_dob": 1 },
   { collation: { locale: "en", strength: 2 } }
 );
 
-// Provider links
+# Provider links
 db.members.createIndex({ "assigned_provider.provider_id": 1 });
 db.members.createIndex({ "preferred_provider.provider_id": 1 });
 db.members.createIndex({ "rendered_provider.provider_id": 1 });
 
-// Common filters
+# Common filters
 db.members.createIndex({ "client.client_id": 1, "address.state": 1 });
 
-// If you keep specialistDetails embedded:
+# If you keep specialistDetails embedded:
 db.members.createIndex({ "specialistDetails.providerId": 1 });
 ```
 
@@ -189,7 +189,7 @@ Option B (tenant-aware): shard on { "client.client_id": 1, "_id": "hashed" } if 
 ```javascript
 sh.enableSharding("care");
 sh.shardCollection("care.members", { _id: "hashed" });
-// or:
+# or:
 sh.shardCollection("care.members", { "client.client_id": 1, "_id": "hashed" });
 ```
 
