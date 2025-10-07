@@ -1,0 +1,388 @@
+{
+    "_id": "string",                                --→ renamed from "rowkey"
+    "mbr_change_status": "string",                  ---→ renamed from "mbr_row_status"
+    "program_year": "String",
+    "sex": "string",
+    "member_dob": "string",
+    "market_segment": "string",
+    "lob": "string",
+    "runid": "string",
+    "specialist_ioa_included": "string",
+    "hfca_contract_number": "string",
+    "pbp_id": "string",
+    "blankpaf_flag": "string",
+    "new_to_mcare": "string",
+    "new_to_group": "string",
+    "mcare_elig_date": "string",
+    "care_priority": "string",
+    "cgap_value": "string",
+    "is_deceased": "string",
+    "benefit_plan": "string",
+    "optum_assigned_group_id": "string",
+    "source_component": "string",
+    "is_onshore_coding": "string",
+    "provider_override": "string",
+    "health_plan_identifier": "string", – need to check the use
+    "health_plan_name": "string",
+    "source": "string",
+    "site_cd": "string",
+    "panel_number": "string",
+    "pcp_assigned": "string",
+    "careone_id": "string",
+    "carelevel": "string",
+    "snf": "string",
+    "snf_state": "string",
+    "other_provider_id": "string",
+    "market": "string",
+    "assignment_type": "string",
+    "tier": "string",
+    "cont_enroll_ind": "string",
+    "m_drop_reason": "string",
+    "sdoh_included": "string",
+      "measuresList": [
+                {
+                    "mbr_msr_program": "string",
+                    "measures": [
+                        "string"
+                    ]
+                }
+            ],
+     "engagement_tier": {
+            "eng_tier": "string",
+              "eng_tier_start": "string",
+            "eng_tier_end": "string"
+      },
+    "memberIdentifiers": {
+        "mcid": "string",
+        "cmcal": "string",
+        "hic": "string",
+        "mbrid": "string",
+        "srcid": "string",
+        "alt_sub_id": "string",
+        "mcaid": "string",
+        "mid": "string",
+        "ucard": "string",
+        "pid": "string",
+        "dcard": "string",
+        "oldid": "string", 
+         "client_subscriber_id" : "string"
+    },
+    "name": {
+        "member_first_name": "string",
+        "member_last_name": "string",
+        "member_mi": "string"
+    },
+    "address": {
+        "phone": "string",
+        "member_address_line_1": "string",
+        "member_address_line_2": "string",
+        "city": "string",
+        "state": "string",
+        "zip": "string"
+    },
+    "client": {
+        "client_id": "HUM",
+        "client_name": "HUMANA",
+        "sub_cli_sk": "171",
+        "client_type": "string",
+        "fcd_client_id": "string",
+        "fcd_client_name": "string"
+    },
+    "assigned_provider": {
+        "provider_id": "string",
+         "provider_state" : "string",
+         "provider_details" : "p1"
+    },
+    "rendered_provider": {
+          "provider_id": "string",
+         "provider_state" : "string",
+         "provider_details" : "p2"
+
+    },
+    "preferred_provider": {
+         "provider_id": "string",
+         "provider_state" : "string",
+         "provider_details" : "p3"
+    },
+    "programAssignment": {
+        "mbr_pop_type": "string",
+        "mbr_chohort_program": "string",
+        "cohort_name": "string"
+    },
+    "payment":{
+    "adjustment_fee_amount": "string",
+    "after_exp_crt": "string",
+    "cgap": "string",
+    "complete_perct": "string",
+    "complete_perct_quality": "string",
+    "complete_perct_risk": "string",
+    "exp_date": "string",
+    "final_cgap": "string",
+    "final_cgap_quality": "string",
+    "final_cgap_risk": "string",
+    "final_late": "string",
+    "final_timely": "string",
+    "group_cgap_exclusion": "string",
+    "is_cgap": "string",
+    "is_cgap_timely": "string",
+    "max_eligible_pmt": "string",
+    "orig_timely": "string",
+    "pmt_source": "string",
+    "reimb_supp": "string",
+    "rej_exp_dt": "string",
+    "retro_adjustment_flag": "string",
+    "return_perct": "string",
+    "return_perct_quality": "string",
+    "return_perct_risk": "string",
+    "rowkey": "string",
+    "sec_subm_elg": "string",
+    "timely_adjusted": "string",
+    "timely_reimb_days": "string",
+    "total_cgap": "string",
+    "prov_incentive_payment_flag": "String"
+},
+    "annualVisits": {
+        "annual_exam_complete": "string",
+        "annual_physician": "string",
+        "annual_last_visit": "string",
+        "annual_last_visit_yr": "string"
+    },
+    "audit": {
+        "insrt_dttm": "string",
+        "insrt_user_id": "string",
+        "updt_dttm": "string",
+        "updt_user_id": "string"
+    },
+    "specialistDetails": [
+        {
+            "providerId": "string",
+             "provider_state" : "string",
+            "provider_details" : "sp1",
+            "is_active": "string",
+            "prov_association_status": "string",
+            "prov_association_status_ts": "string",
+           "cms_preclusion" : "string",
+            "specialities": [
+                {
+                    "speciality_code": "string",
+                    "speciality_desc": "string",
+                    "sub_speciality_desc": "string"
+                }
+            ]
+        }
+    ],
+    "incentivePrograms": [
+        {
+            "program": "string",
+            "p_supp_flag": "string",
+            "p_supp_reason": "string",
+            "p_supp_reasons": "string",
+            "eligibilityEndDate": "string",
+            "submissionEligibilityEndDate": "string",
+            "deployed": {
+                "deployed": "string",
+                "firstChannel": "string",
+                "latestChannel": "string",
+                "primaryChannel": "string",
+                "firstDeployedTs": "string",
+                "latestDeployedTs": "string"
+            },
+            "deployable": {
+                "prov_association_status": "string",
+                "prov_association_status_ts": "string",
+                "tollgate_pause_status": "string",
+                "tollgate_pause_status_ts": "string",
+                "tollgate_source": "string",
+                "deployable_status": "string",
+                "deployable_source": "string",
+                "deployable_ts": "string",
+                "first_deployable_ts": "string",
+                "deployable_eligibility_reason": "string",
+                "deployable_status_wo_tollgate": "string"
+            },
+            "allowed_channel": [
+                "string"
+            ],
+            "measuresList": [
+                {
+                    "mbr_msr_program": "string",
+                    "measures": [
+                        "string"
+                    ]
+                }
+            ],
+            "deployments": [
+                {
+                    "channel_name": "string",
+                    "deployed": "string",
+                    "first_deployed_ts": "string",
+                    "latest_deployed_ts": "string",
+                    "first_channel": "string",
+                    "latest_channel": "string",
+                    "primary_channel": "string",
+                    "provisioned": "string",
+                    "first_provisioned_ts": "string",
+                    "latest_provisioned_ts": "string",
+                    "source": "string"
+                }
+            ],
+            "member_submissions": {
+                "final_submission_sts": "Y/N",
+                "final_submission_ts": "string",
+                "submissions": [
+                    {
+                        "submission_src": "string",
+                        "submission_ts": "string",
+                        "submission_sts": "Y/N",
+                        "chart_sts": "string",
+                        "chart_id": "string",
+                        "retrieval_channel": "string",
+                        "first_retrieval_date": "string",
+                        "latest_retrieval_date": "string"
+                    }
+                ]
+            },
+            "data_provisioned": {
+                " data_provisioned": "string",
+                " data_provisioned_source": "string"
+            },
+            "data_transition_status": [
+                {
+                    "action": "cancel",
+                    "action_first_ts": "cancellation_ts",
+                    "action_latest_ts": "cancellation_ts",
+                    "action_first_status": "Y/N",
+                    "action_latest_status": "Y/N"
+                },
+                {
+                    "action": "pause",
+                    "action_first_ts": "pause_ts",
+                    "action_latest_ts": "pause_ts",
+                    "action_first_status": "Y/N",
+                    "action_latest_status": "Y/N"
+                }
+            ],
+            "audit": {
+                "insrt_dttm": "string",
+                "insrt_user_id": "string",
+                "updt_dttm": "string",
+                "updt_user_id": "string"
+            }
+        }
+    ]
+}
+ 
+ 
+ 
+ 
+provider_details
+{  
+   "_id" : "p1",
+   "providerName": "string",
+        "providerGroupId": "string",
+        "providerGroupType": "string",
+        "providerGroupName": "string",
+        "memberReimbursementType": "string",
+        "npi": "string",
+        "mpin": "string",
+        "taxId": "string",
+        "type": "string",
+        "providerFirstName": "string",
+        "providerMiddleName": "string",
+        "providerLastName": "string",
+        "providerAddress1": "string",
+        "providerAddress2": "string",
+        "providerCity": "string",
+        "providerState": "string",
+        "providerZip": "string",
+        "providerPhoneNum": "string",
+        "provEntSpclCd": "string"
+}
+{  
+   "_id" : "p2",
+   "providerName": "string",
+        "providerGroupId": "string",
+        "providerGroupType": "string",
+        "providerGroupName": "string",
+        "memberReimbursementType": "string",
+        "npi": "string",
+        "mpin": "string",
+        "taxId": "string",
+        "type": "string",
+        "providerFirstName": "string",
+        "providerMiddleName": "string",
+        "providerLastName": "string",
+        "providerAddress1": "string",
+        "providerAddress2": "string",
+        "providerCity": "string",
+        "providerState": "string",
+        "providerZip": "string",
+        "providerPhoneNum": "string",
+        "provEntSpclCd": "string"
+}
+{  
+   "_id" : "p3",
+   "providerName": "string",
+        "providerGroupId": "string",
+        "providerGroupType": "string",
+        "providerGroupName": "string",
+        "memberReimbursementType": "string",
+        "npi": "string",
+        "mpin": "string",
+        "taxId": "string",
+        "type": "string",
+        "providerFirstName": "string",
+        "providerMiddleName": "string",
+        "providerLastName": "string",
+        "providerAddress1": "string",
+        "providerAddress2": "string",
+        "providerCity": "string",
+        "providerState": "string",
+        "providerZip": "string",
+        "providerPhoneNum": "string",
+        "provEntSpclCd": "string"
+}
+{  
+   "_id" : "p4",
+   "providerName": "string",
+        "providerGroupId": "string",
+        "providerGroupType": "string",
+        "providerGroupName": "string",
+        "memberReimbursementType": "string",
+        "npi": "string",
+        "mpin": "string",
+        "taxId": "string",
+        "type": "string",
+        "providerFirstName": "string",
+        "providerMiddleName": "string",
+        "providerLastName": "string",
+        "providerAddress1": "string",
+        "providerAddress2": "string",
+        "providerCity": "string",
+        "providerState": "string",
+        "providerZip": "string",
+        "providerPhoneNum": "string",
+        "provEntSpclCd": "string"
+}
+{  
+   "_id" : "sp1",
+   "providerName": "string",
+        "providerGroupId": "string",
+        "providerGroupType": "string",
+        "providerGroupName": "string",
+        "memberReimbursementType": "string",
+        "npi": "string",
+        "mpin": "string",
+        "taxId": "string",
+        "type": "string",
+        "providerFirstName": "string",
+        "providerMiddleName": "string",
+        "providerLastName": "string",
+        "providerAddress1": "string",
+        "providerAddress2": "string",
+        "providerCity": "string",
+        "providerState": "string",
+        "providerZip": "string",
+        "providerPhoneNum": "string",
+        "provEntSpclCd": "string"
+}
