@@ -6,16 +6,12 @@ This document captures recommended improvements to your MongoDB schema for perfo
 ## 1) Use the right types (not all strings)
 
 Rule of thumb
-
 Dates → Date
-
 Money/percentages → NumberDecimal (Decimal128)
-
 Counts/years → NumberInt / NumberLong
-
 True/false → Boolean
 
-Why: Better range queries, sorts, aggregations, and storage efficiency.
+Better range queries, sorts, aggregations, and storage efficiency.
 
 Example
 
