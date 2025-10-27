@@ -15,7 +15,7 @@ Better range queries, sorts, aggregations, and storage efficiency.
 
 Example
 
-```json
+``` js
 {
   "_id": "M123456789",
   "program_year": 2025,
